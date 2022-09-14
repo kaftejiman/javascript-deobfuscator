@@ -1,0 +1,885 @@
+EXPORTS
+    JSLL_MaxInt @1
+    JSLL_MinInt @2
+    JSLL_Zero @3
+    JS_AddArgumentFormatter @4
+    JS_AddExternalStringFinalizer @5
+    JS_AddNamedRoot @6
+    JS_AddNamedRootRT @7
+    JS_AddRoot @8
+    JS_AliasElement @9
+    JS_AliasProperty @10
+    JS_ArenaAllocate @11
+    JS_ArenaFinish @12
+    JS_ArenaFreeAllocation @13
+    JS_ArenaGrow @14
+    JS_ArenaRealloc @15
+    JS_ArenaRelease @16
+    JS_ArenaShutDown @17
+    JS_Assert @18
+    JS_BeginRequest @19
+    JS_BufferIsCompilableUnit @20
+    JS_CStringsAreUTF8 @21
+    JS_CallFunction @22
+    JS_CallFunctionName @23
+    JS_CallFunctionValue @24
+    JS_CeilingLog2 @25
+    JS_CheckAccess @26
+    JS_ClearAllTraps @27
+    JS_ClearAllWatchPoints @28
+    JS_ClearContextThread @29
+    JS_ClearInterrupt @30
+    JS_ClearNewbornRoots @31
+    JS_ClearPendingException @32
+    JS_ClearRegExpRoots @33
+    JS_ClearRegExpStatics @34
+    JS_ClearScope @35
+    JS_ClearScriptTraps @36
+    JS_ClearTrap @37
+    JS_ClearWatchPoint @38
+    JS_ClearWatchPointsForObject @39
+    JS_CloneFunctionObject @40
+    JS_CompareStrings @41
+    JS_CompareValues @42
+    JS_CompileFile @43
+    JS_CompileFileHandle @44
+    JS_CompileFileHandleForPrincipals @45
+    JS_CompileFunction @46
+    JS_CompileFunctionForPrincipals @47
+    JS_CompileScript @48
+    JS_CompileScriptForPrincipals @49
+    JS_CompileUCFunction @50
+    JS_CompileUCFunctionForPrincipals @51
+    JS_CompileUCScript @52
+    JS_CompileUCScriptForPrincipals @53
+    JS_ConcatStrings @54
+    JS_ConstructObject @55
+    JS_ConstructObjectWithArguments @56
+    JS_ContextIterator @57
+    JS_ConvertArguments @58
+    JS_ConvertArgumentsVA @59
+    JS_ConvertStub @60
+    JS_ConvertValue @61
+    JS_DHashAllocTable @62
+    JS_DHashClearEntryStub @63
+    JS_DHashFinalizeStub @64
+    JS_DHashFreeStringKey @65
+    JS_DHashFreeTable @66
+    JS_DHashGetKeyStub @67
+    JS_DHashGetStubOps @68
+    JS_DHashMatchEntryStub @69
+    JS_DHashMatchStringKey @70
+    JS_DHashMoveEntryStub @71
+    JS_DHashStringKey @72
+    JS_DHashTableDestroy @73
+    JS_DHashTableEnumerate @74
+    JS_DHashTableFinish @75
+    JS_DHashTableInit @76
+    JS_DHashTableOperate@12 @77
+    JS_DHashTableRawRemove @78
+    JS_DHashTableSetAlphaBounds @79
+    JS_DHashVoidPtrKeyStub @80
+    JS_DecodeBytes @81
+    JS_DecompileFunction @82
+    JS_DecompileFunctionBody @83
+    JS_DecompileScript @84
+    JS_DefineConstDoubles @85
+    JS_DefineElement @86
+    JS_DefineFunction @87
+    JS_DefineFunctions @88
+    JS_DefineObject @89
+    JS_DefineProperties @90
+    JS_DefineProperty @91
+    JS_DefinePropertyWithTinyId @92
+    JS_DefineUCFunction @93
+    JS_DefineUCProperty @94
+    JS_DefineUCPropertyWithTinyId @95
+    JS_DeleteElement @96
+    JS_DeleteElement2 @97
+    JS_DeleteProperty @98
+    JS_DeleteProperty2 @99
+    JS_DeleteUCProperty2 @100
+    JS_DestroyContext @101
+    JS_DestroyContextMaybeGC @102
+    JS_DestroyContextNoGC @103
+    JS_DestroyIdArray @104
+    JS_DestroyScript @105
+    JS_DropExceptionState @106
+    JS_DropPrincipals @107
+    JS_EncodeCharacters @108
+    JS_EndRequest @109
+    JS_EnterLocalRootScope @110
+    JS_Enumerate @111
+    JS_EnumerateResolvedStandardClasses @112
+    JS_EnumerateStandardClasses @113
+    JS_EnumerateStub @114
+    JS_ErrorFromException @115
+    JS_EvalFramePrincipals @116
+    JS_EvaluateInStackFrame @117
+    JS_EvaluateScript @118
+    JS_EvaluateScriptForPrincipals @119
+    JS_EvaluateUCInStackFrame @120
+    JS_EvaluateUCScript @121
+    JS_EvaluateUCScriptForPrincipals @122
+    JS_ExecuteScript @123
+    JS_ExecuteScriptPart @124
+    JS_FinalizeStub @125
+    JS_Finish @126
+    JS_FinishArenaPool @127
+    JS_FlagScriptFilenamePrefix @128
+    JS_FlagSystemObject @129
+    JS_FloorLog2 @130
+    JS_ForgetLocalRoot @131
+    JS_FrameIterator @132
+    JS_FreeArenaPool @133
+    JS_GC @134
+    JS_GetArrayLength @135
+    JS_GetClass @136
+    JS_GetClassObject @137
+    JS_GetConstructor @138
+    JS_GetContextPrivate @139
+    JS_GetContextThread @140
+    JS_GetElement @141
+    JS_GetEmptyStringValue @142
+    JS_GetExternalStringGCType @143
+    JS_GetFrameAnnotation @144
+    JS_GetFrameCallObject @145
+    JS_GetFrameCalleeObject @146
+    JS_GetFrameFunction @147
+    JS_GetFrameFunctionObject @148
+    JS_GetFrameObject @149
+    JS_GetFramePC @150
+    JS_GetFramePrincipalArray @151
+    JS_GetFrameReturnValue @152
+    JS_GetFrameScopeChain @153
+    JS_GetFrameScript @154
+    JS_GetFrameThis @155
+    JS_GetFunctionArity @156
+    JS_GetFunctionFlags @157
+    JS_GetFunctionId @158
+    JS_GetFunctionName @159
+    JS_GetFunctionNative @160
+    JS_GetFunctionObject @161
+    JS_GetFunctionScript @162
+    JS_GetFunctionTotalSize @163
+    JS_GetGlobalObject @164
+    JS_GetImplementationVersion @165
+    JS_GetInstancePrivate @166
+    JS_GetLocaleCallbacks @167
+    JS_GetMethod @168
+    JS_GetMethodById @169
+    JS_GetNaNValue @170
+    JS_GetNegativeInfinityValue @171
+    JS_GetObjectId @172
+    JS_GetObjectTotalSize @173
+    JS_GetOptions @174
+    JS_GetParent @175
+    JS_GetPendingException @176
+    JS_GetPositiveInfinityValue @177
+    JS_GetPrivate @178
+    JS_GetProperty @179
+    JS_GetPropertyAttributes @180
+    JS_GetPropertyAttrsGetterAndSetter @181
+    JS_GetPropertyDesc @182
+    JS_GetPropertyDescArray @183
+    JS_GetPrototype @184
+    JS_GetReservedSlot @185
+    JS_GetRuntime @186
+    JS_GetRuntimePrivate @187
+    JS_GetScopeChain @188
+    JS_GetScriptBaseLineNumber @189
+    JS_GetScriptFilename @190
+    JS_GetScriptFilenameFlags @191
+    JS_GetScriptLineExtent @192
+    JS_GetScriptObject @193
+    JS_GetScriptPrincipals @194
+    JS_GetScriptTotalSize @195
+    JS_GetScriptVersion @196
+    JS_GetScriptedCaller @197
+    JS_GetStringBytes @198
+    JS_GetStringChars @199
+    JS_GetStringLength @200
+    JS_GetTopScriptFilenameFlags @201
+    JS_GetTrapOpcode @202
+    JS_GetTypeName @203
+    JS_GetUCProperty @204
+    JS_GetUCPropertyAttributes @205
+    JS_GetUCPropertyAttrsGetterAndSetter @206
+    JS_GetVersion @207
+    JS_HandleTrap @208
+    JS_HasArrayLength @209
+    JS_HasElement @210
+    JS_HasInstance @211
+    JS_HasProperty @212
+    JS_HasUCProperty @213
+    JS_HashString @214
+    JS_HashTableAdd @215
+    JS_HashTableDestroy @216
+    JS_HashTableDump @217
+    JS_HashTableEnumerateEntries @218
+    JS_HashTableLookup @219
+    JS_HashTableRawAdd @220
+    JS_HashTableRawLookup @221
+    JS_HashTableRawRemove @222
+    JS_HashTableRemove @223
+    JS_HoldPrincipals @224
+    JS_IdToValue @225
+    JS_Init @226
+    JS_InitArenaPool @227
+    JS_InitClass @228
+    JS_InitStandardClasses @229
+    JS_InstanceOf @230
+    JS_InternString @231
+    JS_InternUCString @232
+    JS_InternUCStringN @233
+    JS_IsAboutToBeFinalized @234
+    JS_IsArrayObject @235
+    JS_IsAssigning @236
+    JS_IsConstructing @237
+    JS_IsConstructorFrame @238
+    JS_IsDebuggerFrame @239
+    JS_IsExceptionPending @240
+    JS_IsNativeFrame @241
+    JS_IsRunning @242
+    JS_IsSystemObject @243
+    JS_LeaveLocalRootScope @244
+    JS_LeaveLocalRootScopeWithResult @245
+    JS_LineNumberToPC @246
+    JS_Lock @247
+    JS_LockGCThing @248
+    JS_LockGCThingRT @249
+    JS_LookupElement @250
+    JS_LookupProperty @251
+    JS_LookupPropertyWithFlags @252
+    JS_LookupUCProperty @253
+    JS_MakeStringImmutable @254
+    JS_MapGCRoots @255
+    JS_MarkGCThing @256
+    JS_MaybeGC @257
+    JS_NewArrayObject @258
+    JS_NewContext @259
+    JS_NewDHashTable @260
+    JS_NewDependentString @261
+    JS_NewDouble @262
+    JS_NewDoubleValue @263
+    JS_NewExternalString @264
+    JS_NewFunction @265
+    JS_NewGrowableString @266
+    JS_NewHashTable @267
+    JS_NewNumberValue @268
+    JS_NewObject @269
+    JS_NewPropertyIterator @270
+    JS_NewRegExpObject @271
+    JS_NewScriptObject @272
+    JS_NewString @273
+    JS_NewStringCopyN @274
+    JS_NewStringCopyZ @275
+    JS_NewUCRegExpObject @276
+    JS_NewUCString @277
+    JS_NewUCStringCopyN @278
+    JS_NewUCStringCopyZ @279
+    JS_NextProperty @280
+    JS_Now @281
+    JS_ObjectIsFunction @282
+    JS_PCToLineNumber @283
+    JS_PopArguments @284
+    JS_PropertyIterator @285
+    JS_PropertyStub @286
+    JS_PushArguments @287
+    JS_PushArgumentsVA @288
+    JS_PutPropertyDescArray @289
+    JS_RemoveArgumentFormatter @290
+    JS_RemoveExternalStringFinalizer @291
+    JS_RemoveRoot @292
+    JS_RemoveRootRT @293
+    JS_ReportError @294
+    JS_ReportErrorFlagsAndNumber @295
+    JS_ReportErrorFlagsAndNumberUC @296
+    JS_ReportErrorNumber @297
+    JS_ReportErrorNumberUC @298
+    JS_ReportOutOfMemory @299
+    JS_ReportPendingException @300
+    JS_ReportWarning @301
+    JS_ResolveStandardClass @302
+    JS_ResolveStub @303
+    JS_RestoreExceptionState @304
+    JS_RestoreFrameChain @305
+    JS_ResumeRequest @306
+    JS_SaveExceptionState @307
+    JS_SaveFrameChain @308
+    JS_SealObject @309
+    JS_SetArrayLength @310
+    JS_SetBranchCallback @311
+    JS_SetCallHook @312
+    JS_SetCallReturnValue2 @313
+    JS_SetCheckObjectAccessCallback @314
+    JS_SetContextCallback @315
+    JS_SetContextPrivate @316
+    JS_SetContextThread @317
+    JS_SetDebugErrorHook @318
+    JS_SetDebuggerHandler @319
+    JS_SetDestroyScriptHookProc @320
+    JS_SetElement @321
+    JS_SetErrorReporter @322
+    JS_SetExecuteHook @323
+    JS_SetFrameAnnotation @324
+    JS_SetFrameReturnValue @325
+    JS_SetGCCallback @326
+    JS_SetGCCallbackRT @327
+    JS_SetGCParameter @328
+    JS_SetGlobalObject @329
+    JS_SetInterrupt @330
+    JS_SetLocaleCallbacks @331
+    JS_SetNewScriptHookProc @332
+    JS_SetObjectHook @333
+    JS_SetObjectPrincipalsFinder @334
+    JS_SetOptions @335
+    JS_SetParent @336
+    JS_SetPendingException @337
+    JS_SetPrincipalsTranscoder @338
+    JS_SetPrivate @339
+    JS_SetProperty @340
+    JS_SetPropertyAttributes @341
+    JS_SetPrototype @342
+    JS_SetRegExpInput @343
+    JS_SetReservedSlot @344
+    JS_SetRuntimePrivate @345
+    JS_SetSourceHandler @346
+    JS_SetThreadStackLimit @347
+    JS_SetThrowHook @348
+    JS_SetTrap @349
+    JS_SetUCProperty @350
+    JS_SetUCPropertyAttributes @351
+    JS_SetVersion @352
+    JS_SetWatchPoint @353
+    JS_ShutDown @354
+    JS_StackFramePrincipals @355
+    JS_StringToVersion @356
+    JS_SuspendRequest @357
+    JS_ThrowReportedError @358
+    JS_ToggleOptions @359
+    JS_TypeOfValue @360
+    JS_UndependString @361
+    JS_Unlock @362
+    JS_UnlockGCThing @363
+    JS_UnlockGCThingRT @364
+    JS_ValueToBoolean @365
+    JS_ValueToConstructor @366
+    JS_ValueToECMAInt32 @367
+    JS_ValueToECMAUint32 @368
+    JS_ValueToFunction @369
+    JS_ValueToId @370
+    JS_ValueToInt32 @371
+    JS_ValueToNumber @372
+    JS_ValueToObject @373
+    JS_ValueToString @374
+    JS_ValueToUint16 @375
+    JS_VersionToString @376
+    JS_XDRBytes @377
+    JS_XDRCString @378
+    JS_XDRCStringOrNull @379
+    JS_XDRDestroy @380
+    JS_XDRDouble @381
+    JS_XDRFindClassById @382
+    JS_XDRFindClassIdByName @383
+    JS_XDRInitBase @384
+    JS_XDRMemDataLeft @385
+    JS_XDRMemGetData @386
+    JS_XDRMemResetData @387
+    JS_XDRMemSetData @388
+    JS_XDRNewMem @389
+    JS_XDRRegisterClass @390
+    JS_XDRScript @391
+    JS_XDRString @392
+    JS_XDRStringOrNull @393
+    JS_XDRUint16 @394
+    JS_XDRUint32 @395
+    JS_XDRUint8 @396
+    JS_XDRValue @397
+    JS_YieldRequest @398
+    JS_dtobasestr @399
+    JS_dtostr @400
+    JS_free @401
+    JS_malloc @402
+    JS_realloc @403
+    JS_smprintf @404
+    JS_smprintf_free @405
+    JS_snprintf @406
+    JS_sprintf_append @407
+    JS_strdup @408
+    JS_strtod @409
+    JS_sxprintf @410
+    JS_vsmprintf @411
+    JS_vsnprintf @412
+    JS_vsprintf_append @413
+    JS_vsxprintf @414
+    js_AllocRawStack @415
+    js_AllocStack @416
+    js_AnyNameClass @417 DATA
+    js_AtomToPrintableString @418
+    js_Atomize @419
+    js_AtomizeChars @420
+    js_AttributeNameClass @421 DATA
+    js_CallDestroyScriptHook @422
+    js_CallNewScriptHook @423
+    js_CloseTokenStream @424
+    js_CompileTokenStream @425
+    js_DateGetDate @426
+    js_DateGetHours @427
+    js_DateGetMinutes @428
+    js_DateGetMonth @429
+    js_DateGetMsecSinceEpoch @430
+    js_DateGetSeconds @431
+    js_DateGetYear @432
+    js_DateIsValid @433
+    js_DateSetDate @434
+    js_DateSetHours @435
+    js_DateSetMinutes @436
+    js_DateSetMonth @437
+    js_DateSetSeconds @438
+    js_DateSetYear @439
+    js_FindProperty @440
+    js_FinishCodeGenerator @441
+    js_FreeAtomMap @442
+    js_FreeRawStack @443
+    js_FreeStack @444
+    js_FunctionClass @445 DATA
+    js_GetAtom @446
+    js_GetScriptLineExtent @447
+    js_GetSlotThreadSafe @448
+    js_GetSrcNoteOffset @449
+    js_InitAtomMap @450
+    js_InitCodeGenerator @451
+    js_Invoke @452
+    js_LookupProperty @453
+    js_MapKeywords @454
+    js_NamespaceClass @455 DATA
+    js_NewBufferTokenStream @456
+    js_NewDateObject @457
+    js_NewDateObjectMsec @458
+    js_NewFileTokenStream @459
+    js_NewScriptFromCG @460
+    js_ObjectOps @461 DATA
+    js_ParseTokenStream @462
+    js_ParseXMLTokenStream @463
+    js_QNameClass @464 DATA
+    js_ReportErrorAgain @465
+    js_ScriptClass @466 DATA
+    js_SearchScope @467
+    js_SrcNoteLength @468
+    js_SrcNoteSpec @469 DATA
+    js_ValueToPrintable @470
+    js_ValueToSource @471
+    js_ValueToString @472
+    js_WithObjectOps @473 DATA
+    js_XMLClass @474 DATA
+    js_XMLObjectOps @475 DATA
+    js_fgets @476
+    resolving_MatchEntry @477
+
+IMPORTS
+
+    libnspr4.dll.GetExecutionEnvironment
+    libnspr4.dll.LL_MaxInt
+    libnspr4.dll.LL_MaxUint
+    libnspr4.dll.LL_MinInt
+    libnspr4.dll.LL_Zero
+    libnspr4.dll.PRP_DestroyNakedCondVar
+    libnspr4.dll.PRP_NakedBroadcast
+    libnspr4.dll.PRP_NakedNotify
+    libnspr4.dll.PRP_NakedWait
+    libnspr4.dll.PRP_NewNakedCondVar
+    libnspr4.dll.PRP_TryLock
+    libnspr4.dll.PR_Abort
+    libnspr4.dll.PR_Accept
+    libnspr4.dll.PR_AcceptRead
+    libnspr4.dll.PR_Access
+    libnspr4.dll.PR_AddToCounter
+    libnspr4.dll.PR_AddWaitFileDesc
+    libnspr4.dll.PR_AllocFileDesc
+    libnspr4.dll.PR_Assert
+    libnspr4.dll.PR_AtomicAdd
+    libnspr4.dll.PR_AtomicDecrement
+    libnspr4.dll.PR_AtomicIncrement
+    libnspr4.dll.PR_AtomicSet
+    libnspr4.dll.PR_AttachSharedMemory
+    libnspr4.dll.PR_AttachThread
+    libnspr4.dll.PR_AttachThreadGCAble
+    libnspr4.dll.PR_Available
+    libnspr4.dll.PR_Available64
+    libnspr4.dll.PR_Bind
+    libnspr4.dll.PR_BlockClockInterrupts
+    libnspr4.dll.PR_BlockInterrupt
+    libnspr4.dll.PR_CEnterMonitor
+    libnspr4.dll.PR_CExitMonitor
+    libnspr4.dll.PR_CNotify
+    libnspr4.dll.PR_CNotifyAll
+    libnspr4.dll.PR_CSetOnMonitorRecycle
+    libnspr4.dll.PR_CWait
+    libnspr4.dll.PR_CallOnce
+    libnspr4.dll.PR_CallOnceWithArg
+    libnspr4.dll.PR_Calloc
+    libnspr4.dll.PR_CancelJob
+    libnspr4.dll.PR_CancelWaitFileDesc
+    libnspr4.dll.PR_CancelWaitGroup
+    libnspr4.dll.PR_CeilingLog2
+    libnspr4.dll.PR_ChangeFileDescNativeHandle
+    libnspr4.dll.PR_Cleanup
+    libnspr4.dll.PR_ClearInterrupt
+    libnspr4.dll.PR_ClearThreadGCAble
+    libnspr4.dll.PR_Close
+    libnspr4.dll.PR_CloseDir
+    libnspr4.dll.PR_CloseFileMap
+    libnspr4.dll.PR_CloseSemaphore
+    libnspr4.dll.PR_CloseSharedMemory
+    libnspr4.dll.PR_Connect
+    libnspr4.dll.PR_ConnectContinue
+    libnspr4.dll.PR_ConvertIPv4AddrToIPv6
+    libnspr4.dll.PR_CreateAlarm
+    libnspr4.dll.PR_CreateCounter
+    libnspr4.dll.PR_CreateFileMap
+    libnspr4.dll.PR_CreateIOLayer
+    libnspr4.dll.PR_CreateIOLayerStub
+    libnspr4.dll.PR_CreateMWaitEnumerator
+    libnspr4.dll.PR_CreateOrderedLock
+    libnspr4.dll.PR_CreatePipe
+    libnspr4.dll.PR_CreateProcess
+    libnspr4.dll.PR_CreateProcessDetached
+    libnspr4.dll.PR_CreateSocketPollFd
+    libnspr4.dll.PR_CreateStack
+    libnspr4.dll.PR_CreateThread
+    libnspr4.dll.PR_CreateThreadGCAble
+    libnspr4.dll.PR_CreateThreadPool
+    libnspr4.dll.PR_CreateTrace
+    libnspr4.dll.PR_CreateWaitGroup
+    libnspr4.dll.PR_DecrementCounter
+    libnspr4.dll.PR_Delete
+    libnspr4.dll.PR_DeleteSemaphore
+    libnspr4.dll.PR_DeleteSharedMemory
+    libnspr4.dll.PR_DestroyAlarm
+    libnspr4.dll.PR_DestroyCondVar
+    libnspr4.dll.PR_DestroyCounter
+    libnspr4.dll.PR_DestroyLock
+    libnspr4.dll.PR_DestroyMWaitEnumerator
+    libnspr4.dll.PR_DestroyMonitor
+    libnspr4.dll.PR_DestroyOrderedLock
+    libnspr4.dll.PR_DestroyPollableEvent
+    libnspr4.dll.PR_DestroyProcessAttr
+    libnspr4.dll.PR_DestroyRWLock
+    libnspr4.dll.PR_DestroySem
+    libnspr4.dll.PR_DestroySocketPollFd
+    libnspr4.dll.PR_DestroyStack
+    libnspr4.dll.PR_DestroyTrace
+    libnspr4.dll.PR_DestroyWaitGroup
+    libnspr4.dll.PR_DetachProcess
+    libnspr4.dll.PR_DetachSharedMemory
+    libnspr4.dll.PR_DetachThread
+    libnspr4.dll.PR_DisableClockInterrupts
+    libnspr4.dll.PR_EmulateAcceptRead
+    libnspr4.dll.PR_EmulateSendFile
+    libnspr4.dll.PR_EnableClockInterrupts
+    libnspr4.dll.PR_EnterMonitor
+    libnspr4.dll.PR_EnumerateAddrInfo
+    libnspr4.dll.PR_EnumerateHostEnt
+    libnspr4.dll.PR_EnumerateThreads
+    libnspr4.dll.PR_EnumerateWaitGroup
+    libnspr4.dll.PR_ErrorInstallCallback
+    libnspr4.dll.PR_ErrorInstallTable
+    libnspr4.dll.PR_ErrorLanguages
+    libnspr4.dll.PR_ErrorToName
+    libnspr4.dll.PR_ErrorToString
+    libnspr4.dll.PR_ExitMonitor
+    libnspr4.dll.PR_ExplodeTime
+    libnspr4.dll.PR_ExportFileMapAsString
+    libnspr4.dll.PR_FD_CLR
+    libnspr4.dll.PR_FD_ISSET
+    libnspr4.dll.PR_FD_NCLR
+    libnspr4.dll.PR_FD_NISSET
+    libnspr4.dll.PR_FD_NSET
+    libnspr4.dll.PR_FD_SET
+    libnspr4.dll.PR_FD_ZERO
+    libnspr4.dll.PR_FileDesc2NativeHandle
+    libnspr4.dll.PR_FindFunctionSymbol
+    libnspr4.dll.PR_FindFunctionSymbolAndLibrary
+    libnspr4.dll.PR_FindNextCounterQname
+    libnspr4.dll.PR_FindNextCounterRname
+    libnspr4.dll.PR_FindNextTraceQname
+    libnspr4.dll.PR_FindNextTraceRname
+    libnspr4.dll.PR_FindSymbol
+    libnspr4.dll.PR_FindSymbolAndLibrary
+    libnspr4.dll.PR_FloorLog2
+    libnspr4.dll.PR_FormatTime
+    libnspr4.dll.PR_FormatTimeUSEnglish
+    libnspr4.dll.PR_Free
+    libnspr4.dll.PR_FreeAddrInfo
+    libnspr4.dll.PR_FreeFileDesc
+    libnspr4.dll.PR_FreeLibraryName
+    libnspr4.dll.PR_GMTParameters
+    libnspr4.dll.PR_GetAddrInfoByName
+    libnspr4.dll.PR_GetCanonNameFromAddrInfo
+    libnspr4.dll.PR_GetConnectStatus
+    libnspr4.dll.PR_GetCounter
+    libnspr4.dll.PR_GetCounterHandleFromName
+    libnspr4.dll.PR_GetCounterNameFromHandle
+    libnspr4.dll.PR_GetCurrentThread
+    libnspr4.dll.PR_GetDefaultIOMethods
+    libnspr4.dll.PR_GetDescType
+    libnspr4.dll.PR_GetDirectorySeparator
+    libnspr4.dll.PR_GetDirectorySepartor
+    libnspr4.dll.PR_GetEnv
+    libnspr4.dll.PR_GetError
+    libnspr4.dll.PR_GetErrorText
+    libnspr4.dll.PR_GetErrorTextLength
+    libnspr4.dll.PR_GetFileInfo
+    libnspr4.dll.PR_GetFileInfo64
+    libnspr4.dll.PR_GetFileMethods
+    libnspr4.dll.PR_GetGCRegisters
+    libnspr4.dll.PR_GetHostByAddr
+    libnspr4.dll.PR_GetHostByName
+    libnspr4.dll.PR_GetIPNodeByName
+    libnspr4.dll.PR_GetIdentitiesLayer
+    libnspr4.dll.PR_GetInheritedFD
+    libnspr4.dll.PR_GetInheritedFileMap
+    libnspr4.dll.PR_GetLayersIdentity
+    libnspr4.dll.PR_GetLibraryFilePathname
+    libnspr4.dll.PR_GetLibraryName
+    libnspr4.dll.PR_GetLibraryPath
+    libnspr4.dll.PR_GetMemMapAlignment
+    libnspr4.dll.PR_GetMonitorEntryCount
+    libnspr4.dll.PR_GetNameForIdentity
+    libnspr4.dll.PR_GetNumberOfProcessors
+    libnspr4.dll.PR_GetOSError
+    libnspr4.dll.PR_GetOpenFileInfo
+    libnspr4.dll.PR_GetOpenFileInfo64
+    libnspr4.dll.PR_GetPageShift
+    libnspr4.dll.PR_GetPageSize
+    libnspr4.dll.PR_GetPathSeparator
+    libnspr4.dll.PR_GetPeerName
+    libnspr4.dll.PR_GetPhysicalMemorySize
+    libnspr4.dll.PR_GetPipeMethods
+    libnspr4.dll.PR_GetProtoByName
+    libnspr4.dll.PR_GetProtoByNumber
+    libnspr4.dll.PR_GetRandomNoise
+    libnspr4.dll.PR_GetSP
+    libnspr4.dll.PR_GetSockName
+    libnspr4.dll.PR_GetSocketOption
+    libnspr4.dll.PR_GetSpecialFD
+    libnspr4.dll.PR_GetStackSpaceLeft
+    libnspr4.dll.PR_GetSysfdTableMax
+    libnspr4.dll.PR_GetSystemInfo
+    libnspr4.dll.PR_GetTCPMethods
+    libnspr4.dll.PR_GetThreadAffinityMask
+    libnspr4.dll.PR_GetThreadID
+    libnspr4.dll.PR_GetThreadPriority
+    libnspr4.dll.PR_GetThreadPrivate
+    libnspr4.dll.PR_GetThreadScope
+    libnspr4.dll.PR_GetThreadState
+    libnspr4.dll.PR_GetThreadType
+    libnspr4.dll.PR_GetTraceEntries
+    libnspr4.dll.PR_GetTraceHandleFromName
+    libnspr4.dll.PR_GetTraceNameFromHandle
+    libnspr4.dll.PR_GetTraceOption
+    libnspr4.dll.PR_GetUDPMethods
+    libnspr4.dll.PR_GetUniqueIdentity
+    libnspr4.dll.PR_ImplodeTime
+    libnspr4.dll.PR_ImportFile
+    libnspr4.dll.PR_ImportFileMapFromString
+    libnspr4.dll.PR_ImportPipe
+    libnspr4.dll.PR_ImportTCPSocket
+    libnspr4.dll.PR_ImportUDPSocket
+    libnspr4.dll.PR_IncrementCounter
+    libnspr4.dll.PR_Init
+    libnspr4.dll.PR_Initialize
+    libnspr4.dll.PR_InitializeNetAddr
+    libnspr4.dll.PR_Initialized
+    libnspr4.dll.PR_Interrupt
+    libnspr4.dll.PR_IntervalNow
+    libnspr4.dll.PR_IntervalToMicroseconds
+    libnspr4.dll.PR_IntervalToMilliseconds
+    libnspr4.dll.PR_IntervalToSeconds
+    libnspr4.dll.PR_IsNetAddrType
+    libnspr4.dll.PR_JoinJob
+    libnspr4.dll.PR_JoinThread
+    libnspr4.dll.PR_JoinThreadPool
+    libnspr4.dll.PR_KillProcess
+    libnspr4.dll.PR_Listen
+    libnspr4.dll.PR_LoadLibrary
+    libnspr4.dll.PR_LoadLibraryWithFlags
+    libnspr4.dll.PR_LoadStaticLibrary
+    libnspr4.dll.PR_LocalTimeParameters
+    libnspr4.dll.PR_Lock
+    libnspr4.dll.PR_LockFile
+    libnspr4.dll.PR_LockOrderedLock
+    libnspr4.dll.PR_LogFlush
+    libnspr4.dll.PR_LogPrint
+    libnspr4.dll.PR_MakeDir
+    libnspr4.dll.PR_Malloc
+    libnspr4.dll.PR_MemMap
+    libnspr4.dll.PR_MemUnmap
+    libnspr4.dll.PR_MicrosecondsToInterval
+    libnspr4.dll.PR_MillisecondsToInterval
+    libnspr4.dll.PR_MkDir
+    libnspr4.dll.PR_NTFast_Accept
+    libnspr4.dll.PR_NTFast_AcceptRead
+    libnspr4.dll.PR_NTFast_AcceptRead_WithTimeoutCallback
+    libnspr4.dll.PR_NTFast_UpdateAcceptContext
+    libnspr4.dll.PR_NT_CancelIo
+    libnspr4.dll.PR_NetAddrToString
+    libnspr4.dll.PR_NewCondVar
+    libnspr4.dll.PR_NewLock
+    libnspr4.dll.PR_NewLogModule
+    libnspr4.dll.PR_NewMonitor
+    libnspr4.dll.PR_NewNamedMonitor
+    libnspr4.dll.PR_NewPollableEvent
+    libnspr4.dll.PR_NewProcessAttr
+    libnspr4.dll.PR_NewRWLock
+    libnspr4.dll.PR_NewSem
+    libnspr4.dll.PR_NewTCPSocket
+    libnspr4.dll.PR_NewTCPSocketPair
+    libnspr4.dll.PR_NewThreadPrivateIndex
+    libnspr4.dll.PR_NewUDPSocket
+    libnspr4.dll.PR_NormalizeTime
+    libnspr4.dll.PR_Notify
+    libnspr4.dll.PR_NotifyAll
+    libnspr4.dll.PR_NotifyAllCondVar
+    libnspr4.dll.PR_NotifyCondVar
+    libnspr4.dll.PR_Now
+    libnspr4.dll.PR_Open
+    libnspr4.dll.PR_OpenAnonFileMap
+    libnspr4.dll.PR_OpenDir
+    libnspr4.dll.PR_OpenFile
+    libnspr4.dll.PR_OpenSemaphore
+    libnspr4.dll.PR_OpenSharedMemory
+    libnspr4.dll.PR_OpenTCPSocket
+    libnspr4.dll.PR_OpenUDPSocket
+    libnspr4.dll.PR_ParseTimeString
+    libnspr4.dll.PR_Poll
+    libnspr4.dll.PR_PopIOLayer
+    libnspr4.dll.PR_PostSem
+    libnspr4.dll.PR_PostSemaphore
+    libnspr4.dll.PR_ProcessAttrSetCurrentDirectory
+    libnspr4.dll.PR_ProcessAttrSetInheritableFD
+    libnspr4.dll.PR_ProcessAttrSetInheritableFileMap
+    libnspr4.dll.PR_ProcessAttrSetStdioRedirect
+    libnspr4.dll.PR_ProcessExit
+    libnspr4.dll.PR_PushIOLayer
+    libnspr4.dll.PR_QueueJob
+    libnspr4.dll.PR_QueueJob_Accept
+    libnspr4.dll.PR_QueueJob_Connect
+    libnspr4.dll.PR_QueueJob_Read
+    libnspr4.dll.PR_QueueJob_Timer
+    libnspr4.dll.PR_QueueJob_Write
+    libnspr4.dll.PR_RWLock_Rlock
+    libnspr4.dll.PR_RWLock_Unlock
+    libnspr4.dll.PR_RWLock_Wlock
+    libnspr4.dll.PR_Read
+    libnspr4.dll.PR_ReadDir
+    libnspr4.dll.PR_Realloc
+    libnspr4.dll.PR_RecordTraceEntries
+    libnspr4.dll.PR_Recv
+    libnspr4.dll.PR_RecvFrom
+    libnspr4.dll.PR_Rename
+    libnspr4.dll.PR_ResetAlarm
+    libnspr4.dll.PR_ResetProcessAttr
+    libnspr4.dll.PR_ResumeAll
+    libnspr4.dll.PR_RmDir
+    libnspr4.dll.PR_ScanStackPointers
+    libnspr4.dll.PR_SecondsToInterval
+    libnspr4.dll.PR_Seek
+    libnspr4.dll.PR_Seek64
+    libnspr4.dll.PR_Select
+    libnspr4.dll.PR_Send
+    libnspr4.dll.PR_SendFile
+    libnspr4.dll.PR_SendTo
+    libnspr4.dll.PR_SetAlarm
+    libnspr4.dll.PR_SetCPUAffinityMask
+    libnspr4.dll.PR_SetConcurrency
+    libnspr4.dll.PR_SetCounter
+    libnspr4.dll.PR_SetEnv
+    libnspr4.dll.PR_SetError
+    libnspr4.dll.PR_SetErrorText
+    libnspr4.dll.PR_SetFDCacheSize
+    libnspr4.dll.PR_SetFDInheritable
+    libnspr4.dll.PR_SetLibraryPath
+    libnspr4.dll.PR_SetLogBuffering
+    libnspr4.dll.PR_SetLogFile
+    libnspr4.dll.PR_SetNetAddr
+    libnspr4.dll.PR_SetPollableEvent
+    libnspr4.dll.PR_SetSocketOption
+    libnspr4.dll.PR_SetStdioRedirect
+    libnspr4.dll.PR_SetSysfdTableSize
+    libnspr4.dll.PR_SetThreadAffinityMask
+    libnspr4.dll.PR_SetThreadDumpProc
+    libnspr4.dll.PR_SetThreadGCAble
+    libnspr4.dll.PR_SetThreadPriority
+    libnspr4.dll.PR_SetThreadPrivate
+    libnspr4.dll.PR_SetThreadRecycleMode
+    libnspr4.dll.PR_SetTraceOption
+    libnspr4.dll.PR_ShowStatus
+    libnspr4.dll.PR_Shutdown
+    libnspr4.dll.PR_ShutdownThreadPool
+    libnspr4.dll.PR_Sleep
+    libnspr4.dll.PR_Socket
+    libnspr4.dll.PR_StackPop
+    libnspr4.dll.PR_StackPush
+    libnspr4.dll.PR_Stat
+    libnspr4.dll.PR_StringToNetAddr
+    libnspr4.dll.PR_SubtractFromCounter
+    libnspr4.dll.PR_SuspendAll
+    libnspr4.dll.PR_Sync
+    libnspr4.dll.PR_TLockFile
+    libnspr4.dll.PR_TestAndEnterMonitor
+    libnspr4.dll.PR_TestAndLock
+    libnspr4.dll.PR_ThreadScanStackPointers
+    libnspr4.dll.PR_TicksPerSecond
+    libnspr4.dll.PR_Trace
+    libnspr4.dll.PR_TransmitFile
+    libnspr4.dll.PR_USPacificTimeParameters
+    libnspr4.dll.PR_UnblockClockInterrupts
+    libnspr4.dll.PR_UnblockInterrupt
+    libnspr4.dll.PR_UnloadLibrary
+    libnspr4.dll.PR_Unlock
+    libnspr4.dll.PR_UnlockFile
+    libnspr4.dll.PR_UnlockOrderedLock
+    libnspr4.dll.PR_VersionCheck
+    libnspr4.dll.PR_Wait
+    libnspr4.dll.PR_WaitCondVar
+    libnspr4.dll.PR_WaitForPollableEvent
+    libnspr4.dll.PR_WaitProcess
+    libnspr4.dll.PR_WaitRecvReady
+    libnspr4.dll.PR_WaitSem
+    libnspr4.dll.PR_WaitSemaphore
+    libnspr4.dll.PR_Write
+    libnspr4.dll.PR_Writev
+    libnspr4.dll.PR_Yield
+    libnspr4.dll.PR_cnvtf
+    libnspr4.dll.PR_dtoa
+    libnspr4.dll.PR_fprintf
+    libnspr4.dll.PR_htonl
+    libnspr4.dll.PR_htonll
+    libnspr4.dll.PR_htons
+    libnspr4.dll.PR_ntohl
+    libnspr4.dll.PR_ntohll
+    libnspr4.dll.PR_ntohs
+    libnspr4.dll.PR_smprintf
+    libnspr4.dll.PR_smprintf_free
+    libnspr4.dll.PR_snprintf
+    libnspr4.dll.PR_sprintf_append
+    libnspr4.dll.PR_sscanf
+    libnspr4.dll.PR_strtod
+    libnspr4.dll.PR_sxprintf
+    libnspr4.dll.PR_vfprintf
+    libnspr4.dll.PR_vsmprintf
+    libnspr4.dll.PR_vsnprintf
+    libnspr4.dll.PR_vsprintf_append
+    libnspr4.dll.PR_vsxprintf
+    libnspr4.dll.PT_FPrintStats
+    libnspr4.dll.SetExecutionEnvironment
+    libnspr4.dll._PR_AddSleepQ
+    libnspr4.dll._PR_CreateThread
+    libnspr4.dll._PR_DelSleepQ
+    libnspr4.dll._PR_GetPrimordialCPU
+    libnspr4.dll._PR_NativeCreateThread
+    libnspr4.dll._pr_push_ipv6toipv4_layer
+    libnspr4.dll._pr_test_ipv6_socket
+    libnspr4.dll.libVersionPoint
